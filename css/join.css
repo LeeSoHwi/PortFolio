@@ -1,0 +1,202 @@
+div#mainVisual{width:1200px; height:950px; margin:40px auto 0;}
+label{display:block; }
+#footer label{display:none;}
+legend, caption{position:absolute; text-indent:-9999px; overflow:hidden;}
+
+/* SubNavi */
+div#subNavi{float:left; width:25%; height:950px;}
+div#subNavi div:nth-child(1){height:200px; background:orange;}
+div#subNavi div:nth-child(2){height:750px; background:#f8f8fc;}
+div#subNavi div p{text-align:center; font-size:30px; padding-top:60px;}
+div#subNavi div ul{padding-top:10px;}
+div#subNavi div ul li{text-align:center; padding:15px 0;}
+div#subNavi div ul li a{font-size:20px;}
+
+/* Contents */
+div#content{float:right; width:72%; height:950px; background:#f8f8fc;}
+
+div#content .join{width:93%; height:940px; margin:30px; font-family:'함초롱바탕', Gothic, serif;}
+div#content .join h2{font-size:30px; font-weight:bold; padding:30px 10px 15px; font-family:'휴먼고딕', Gothic, serif;}
+div#content .join h3 > img{width:16px; margin:3px 10px;}
+
+
+.join > p{font-size:1.2em; margin-top:40px; border-top:1px dashed #333; padding:35px 50px 30px;}
+.join span{color:red; font-weight:700; font-size:1.2em;}
+
+.join table{width:90%; margin:0 auto;}
+.join table th{width:23%; padding:10px 20px; text-align:right; background:#FFC967; }
+.join table td{width:77%; padding:10px 15px; background:#FFF3DF; }
+.join table td div{float:left; margin-right:30px;}
+.join table td div input{width:100%; margin-top:8px;}
+.join table td input{font-size:0.9em; width:31%; margin:2px; padding:5px; border:none;}
+.join table td input.zipCode{width:10%;}
+.join table td input.zipCode2{width:51%; margin-top:8px;}
+.join table td input.tel{width:9%;}
+.join table td input.mail{width:23%;}
+.join table td select{margin:2px; padding:3px; border:none;}
+.join table td p{font-size:0.9em; padding:2px; float:right; margin-right:140px; margin-top:8px; font-weight:500;}
+.join table td button{margin-left:5px; padding:5px 12px; font-size:0.9em; border:none; border-radius:40px; background:#723D3D; color:#fff;}
+
+.join fieldset > p {text-align:center;}
+.join fieldset > p input{width:140px; height:45px; margin:30px 12px; padding:5px; font-size:1.2em; border:none; border-radius:40px; background:#723D3D; color:#fff;}
+
+
+
+@media screen and (max-width:1200px){
+	div#subNavi{display:none;}
+	
+	div#mainVisual{width:100%; }
+	div#content{width:90%; float:none; margin:40px auto;}
+	div#content .join{margin:0 auto;}
+
+	div#footer{height:300px;}
+	div#footer .footerTop{height:120px; border-bottom:none;}
+	div#footer .guideMenu{height:55px; border-bottom:1px solid #856;}
+	div#footer .siteLink{float:right; width:250px; margin:30px 0 0;}
+	div#footer .logoFooter{position:absolute; left:5%; top:53%; margin:0; padding:0;}
+	div#footer address{display:inline-block; width:70%; float:right; margin-top:20px;}
+	div#footer address span{float:left; padding:20px;}
+
+}
+
+@media screen and (min-width:800px) and (max-width:969px){
+	div#header > a img{display:block; width:6%; float:right; margin:10px 10px 0;}
+	div#header div.left{width:470px; height:60px; float:left;}
+	div#header div.right{display:none;}
+
+	div#subNavi{display:none;}
+
+	div#mainVisual{width:100%; margin:40px auto 0;}
+	div#content{width:100%; float:none; margin:0 auto;}
+
+	div#footer ul.guideMenu li{padding:10px;}
+	div#footer address span{float:left; padding:20px 0 0 25px;}
+}
+
+@media screen and (min-width:580px) and (max-width:799px){
+	.wrap{overflow:hidden;}
+	div#header{display:none;}
+	
+	div#navigator input{display:none;}
+	div#navigator label{display:block;}
+	div#navigator label img{width:40px; padding:15px; position:fixed;}
+	
+	div#navigator{position:fixed; z-index:9999; width:100%; height:70px; background:url(../images/common/logo.png) no-repeat center ; background-color:orange; }
+	
+	div#navigator ul{width:100%; height:100%; position:fixed; left:1000px; top:0px; background:#fff1d8; z-index:9999; transition:all 1s ease;}
+	div#navigator ul li{float:none;}
+	div#navigator ul li a{font-size:1.1em; height:40px; width:100px; line-height:40px; text-align:right; padding:10px 30px;}
+	
+	div#navigator #menubar:checked ~ ul{left:65px;}
+
+	div#navigator ul:hover li ul{height:100%;}
+	div#navigator ul li:hover{background:#620000;}
+	div#navigator ul li:hover > a{color:white;}
+	div#navigator ul li:hover > ul{left:160px;}
+	
+	div#navigator ul li ul{position:absolute; width:100%; height:100%; left:700px; top:0; padding-top:10px; overflow:hidden; border:none; transition:all 1s ease;}
+	div#navigator ul li ul li a{font-size:13px; width:140px; padding:0px 20px; margin:10px 0; text-align:left;}
+	
+	div#mainVisual{width:100%; margin:70px auto 0;}
+	div#content{width:100%; float:none; margin:0 auto;}
+
+
+	div#footer .footerTop{height:60px; border-top:none;}
+	ul.guideMenu li, div.siteLink{display:none;}
+	ul.guideMenu li:nth-child(1),ul.guideMenu li:nth-child(2){display:block;}
+	ul.guideMenu li a{font-size:0.9em;}
+	div#footer address{clear:both; position:absolute; left:15%; width:550px;}
+	div#footer address span{display:block;font-size:0.8em; margin:0; padding:5px 10px;text-align:center;}
+
+	div#footer .logoFooter{width:100%; display:block;}
+	div#footer .logoFooter img{position:absolute; top:0; left:11%;}
+}
+
+@media screen and (min-width:430px) and (max-width:579px){
+	.wrap{overflow:hidden;}
+	div#header{display:none;}
+
+	div#navigator input{display:none;}
+	div#navigator label{display:block;}
+	div#navigator label img{width:40px; padding:15px; position:fixed;}
+	
+	div#navigator{position:fixed; z-index:9999; width:100%; height:70px; background:url(../images/common/logo.png) no-repeat center; background-color:orange;}
+	
+	div#navigator ul{width:100%; height:100%; position:fixed; left:700px; top:0px; background:#fff1d8; z-index:9999; transition:all 1s ease;}
+	div#navigator ul li{float:none;}
+	div#navigator ul li a{font-size:1.1em; height:40px; width:100px; line-height:40px; text-align:right; padding:10px 30px;}
+	
+	div#navigator #menubar:checked ~ ul{left:65px;}
+
+	div#navigator ul:hover li ul{height:100%;}
+	div#navigator ul li:hover{background:#620000;}
+	div#navigator ul li:hover > a{color:white;}
+	div#navigator ul li:hover > ul{left:160px;}
+	
+	div#navigator ul li ul{position:absolute; width:100%; height:100%; left:700px; top:0; padding-top:10px; overflow:hidden; border:none; transition:all 1s ease;}
+	div#navigator ul li ul li a{font-size:13px; width:140px; padding:0px 20px; margin:10px 0; text-align:left;}
+
+	div#content{width:100%; float:none; margin:0 auto;}
+
+	div#footer{margin-top:10px; height:100%; }
+	div#footer .footerTop{width:100%; height:60px; margin-bottom:20px;}
+	ul.guideMenu li, div.siteLink{display:none;}
+	ul.guideMenu li:nth-child(1),ul.guideMenu li:nth-child(2){display:block;}
+	ul.guideMenu li a{font-size:0.9em;}
+	div#footer address{float:none; width:90%; margin:0px; padding:0 30px;}
+	div#footer address span{float:none; display:block;font-size:0.8em; margin:0; padding:5px 10px;text-align:center;}
+	div#footer address span.addr{display:none;}
+	div#footer address span:nth-child(2){float:left; padding:5px 45px 5px 0;}
+	div#footer address span:nth-child(3){float:right; padding:5px 0 5px 45px;}
+	div#footer .logoFooter{width:100%; display:block;}
+	div#footer .logoFooter img{position:absolute; bottom:-30px; left:50%; margin-left:-130px;}
+}
+
+@media screen and (min-width:320px) and (max-width:429px){
+	.wrap{overflow:hidden;}
+	div#header{display:none;}
+
+	div#navigator input{display:none;}
+	div#navigator label{display:block;}
+	div#navigator label img{width:40px; padding:15px; position:fixed;}
+	
+	div#navigator{position:fixed; z-index:9999; width:100%; height:70px; background:url(../images/common/logo.png) no-repeat center; background-color:orange;}
+	
+	div#navigator ul{width:100%; height:100%; position:fixed; left:500px; top:0px; background:#fff1d8; z-index:9999; transition:all 1s ease;}
+	div#navigator ul li{float:none;}
+	div#navigator ul li a{font-size:1.1em; height:40px; width:100px; line-height:40px; text-align:right; padding:10px 30px;}
+	
+	div#navigator #menubar:checked ~ ul{left:65px;}
+
+	div#navigator ul:hover li ul{height:100%;}
+	div#navigator ul li:hover{background:#620000;}
+	div#navigator ul li:hover > a{color:white;}
+	div#navigator ul li:hover > ul{left:160px;}
+	
+	div#navigator ul li ul{position:absolute; width:100%; height:100%; left:500px; top:0; padding-top:10px; overflow:hidden; border:none; transition:all 1s ease;}
+	div#navigator ul li ul li a{font-size:13px; width:140px; padding:0px 20px; margin:10px 0; text-align:left;}
+	
+	div#mainVisual{height:700px;}
+	div#content{height:100%; background:#f8f8fc;}
+	div#content{width:100%; float:none; margin:0 auto;}
+	div#content .join{height:100%;}
+	div#content .join h2, div#content .login h3{display:none;}
+
+
+	div#footer{margin-top:10px; height:100%; }
+	div#footer .footerTop{width:100%; height:50px; margin-bottom:0px;}
+	div#footer div.siteLink{display:none;}
+	div#footer ul.guideMenu{ height:50px; margin-left:-375px;}
+	div#footer ul.guideMenu li{margin:10px 0 0; padding:0;}
+	div#footer ul.guideMenu li a{font-size:0.9em; margin:0; padding:10px;}
+	
+	div#footer address{float:none; width:90%; height:100%; margin:0px; padding:0 20px;}
+	div#footer address span{float:none; display:block; font-size:0.8em; margin:10px; padding:0 12px; text-align:center;}
+	div#footer address span.addr{display:none;}
+	div#footer address span.tel{float:left;padding:0 20px;}
+	div#footer address span.fax{float:left;}
+	div#footer address span.copyright{float:none; display:block;}
+	div#footer .logoFooter{width:100%; display:none;}
+
+}
+

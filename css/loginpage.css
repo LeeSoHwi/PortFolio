@@ -1,0 +1,218 @@
+div#mainVisual{width:1200px; height:950px; margin:40px auto 0;}
+
+/* SubNavi */
+div#subNavi{float:left; width:25%; height:950px;}
+div#subNavi div:nth-child(1){height:200px; background:orange;}
+div#subNavi div:nth-child(2){height:750px; background:#f8f8fc;}
+div#subNavi div p{text-align:center; font-size:30px; padding-top:60px;}
+div#subNavi div ul{padding-top:10px;}
+div#subNavi div ul li{text-align:center; padding:15px 0;}
+div#subNavi div ul li a{font-size:20px;}
+
+/* Contents */
+div#content{float:right; width:72%; height:950px; background:#f8f8fc;}
+
+div#content .login{width:93%; height:940px; margin:30px; font-family:'함초롱바탕', Gothic, serif;}
+div#content .login h2{font-size:30px; font-weight:bold; padding:30px 10px 15px; font-family:'휴먼고딕', Gothic, serif;}
+div#content .login h3 > img{width:16px; margin:3px 10px;}
+div#content .login .images{float:right;}
+div#content .login .images > img{width:45px; margin-left:5px;}
+
+div#content .login h4{width:580px; height:80px; margin:80px auto 0; padding:100px 100px 10px; font-weight:700; font-size:30px; font-family:'함초롱바탕', Gothic, serif; line-height:80px; border-top:1px dashed #333;}
+div#content .login p{padding:0 100px 10px; font-size:16px; font-family:'함초롱바탕', Gothic, serif; word-break:keep-all;}
+
+div#content .loginbox{width:460px; padding:60px 50px 50px 100px; margin:30px auto; border:3px solid #ccc;}
+div#content .loginbox .image{display:inline-block; width:46px; background:#620000; padding:24px 31px; border-radius:50%; float:left; margin:5px 0 0;}
+
+div#content form{float:left;}
+div#content form .inputBox{margin:5px 10px 0 0; display:inline-block; float:left;}
+div#content form .inputBox input{display:block; margin:5px 3px 5px 17px; padding:2px 5px; width:180px; height:25px; border-radius:5px; border:1px solid #ddd;}
+div#content form a{width:65px; height:67px; line-height:67px; text-align:center; font-size:15px; font-weight:bold; display:inline-block; float:left; background:orange; margin:10px 0 0; border-radius:5px;}
+
+div#content .loginbox .findInfo{font-size:14px; position:relative; left:115px; bottom:15px; clear:left;}
+div#content .loginbox .findInfo a{ border-left:1px solid #ccc; padding:3px 10px 3px 11px; }
+div#content .loginbox .findInfo a:first-child{border-left:0px;}
+
+
+@media screen and (max-width:1200px){
+	div#subNavi{display:none;}
+	
+	div#mainVisual{width:100%; }
+	div#content{width:90%; float:none; margin:0 auto;}
+	div#content .login{margin:0 auto;}
+	div#content .login p{padding:0 100px 10px;}
+
+	div#footer{height:300px;}
+	div#footer .footerTop{height:120px; border-bottom:none;}
+	div#footer .guideMenu{height:55px; border-bottom:1px solid #856;}
+	div#footer .siteLink{float:right; width:250px; margin:30px 0 0;}
+	div#footer .logoFooter{position:absolute; left:5%; top:53%; margin:0; padding:0;}
+	div#footer address{display:inline-block; width:70%; float:right; margin-top:20px;}
+	div#footer address span{float:left; padding:20px;}
+
+}
+
+@media screen and (min-width:800px) and (max-width:969px){
+	div#header > a img{display:block; width:6%; float:right; margin:10px 10px 0;}
+	div#header div.left{width:470px; height:60px; float:left;}
+	div#header div.right{display:none;}
+
+	div#subNavi{display:none;}
+
+	div#mainVisual{width:100%; margin:40px auto 0;}
+	div#content{width:100%; float:none; margin:0 auto;}
+	div#content .login{margin:0 auto;}
+	div#content h2, div#content h3{margin-left:40px;}
+	div#content .login h4{padding:80px 100px 10px}
+
+	div#footer ul.guideMenu li{padding:10px;}
+	div#footer address span{float:left; padding:20px 0 0 25px;}
+}
+
+@media screen and (min-width:580px) and (max-width:799px){
+	.wrap{overflow:hidden;}
+	div#header{display:none;}
+	
+	div#navigator input{display:none;}
+	div#navigator label{display:block;}
+	div#navigator label img{width:40px; padding:15px; position:fixed;}
+	
+	div#navigator{position:fixed; z-index:9999; width:100%; height:70px; background:url(../images/common/logo.png) no-repeat center ; background-color:orange; cursor:pointer;}
+	
+	div#navigator ul{width:100%; height:100%; position:fixed; left:1000px; top:0px; background:#fff1d8; z-index:9999; transition:all 1s ease;}
+	div#navigator ul li{float:none;}
+	div#navigator ul li a{font-size:1.1em; height:40px; width:100px; line-height:40px; text-align:right; padding:10px 30px;}
+	
+	div#navigator #menubar:checked ~ ul{left:65px;}
+
+	div#navigator ul:hover li ul{height:100%;}
+	div#navigator ul li:hover{background:#620000;}
+	div#navigator ul li:hover > a{color:white;}
+	div#navigator ul li:hover > ul{left:160px;}
+	
+	div#navigator ul li ul{position:absolute; width:100%; height:100%; left:700px; top:0; padding-top:10px; overflow:hidden; border:none; transition:all 1s ease;}
+	div#navigator ul li ul li a{font-size:13px; width:140px; padding:0px 20px; margin:10px 0; text-align:left;}
+	
+	div#mainVisual{width:100%; margin:70px auto 0;}
+	div#content{width:100%; float:none; margin:0 auto;}
+	div#content .login h2{padding:30px 0 20px;}
+
+	div#content .loginbox{width:430px; padding:60px 50px 50px 50px; margin:30px auto;}
+
+	div#footer .footerTop{height:60px; border-top:none;}
+	ul.guideMenu li, div.siteLink{display:none;}
+	ul.guideMenu li:nth-child(1),ul.guideMenu li:nth-child(2){display:block;}
+	ul.guideMenu li a{font-size:0.9em;}
+	div#footer address{clear:both; position:absolute; left:15%; width:550px;}
+	div#footer address span{display:block;font-size:0.8em; margin:0; padding:5px 10px;text-align:center;}
+
+	div#footer .logoFooter{width:100%; display:block;}
+	div#footer .logoFooter img{position:absolute; top:0; left:11%;}
+}
+
+@media screen and (min-width:430px) and (max-width:579px){
+	.wrap{overflow:hidden;}
+	div#header{display:none;}
+
+	div#navigator input{display:none;}
+	div#navigator label{display:block;}
+	div#navigator label img{width:40px; padding:15px; position:fixed;}
+	
+	div#navigator{position:fixed; z-index:9999; width:100%; height:70px; background:url(../images/common/logo.png) no-repeat center; background-color:orange; cursor:pointer;}
+	
+	div#navigator ul{width:100%; height:100%; position:fixed; left:700px; top:0px; background:#fff1d8; z-index:9999; transition:all 1s ease;}
+	div#navigator ul li{float:none;}
+	div#navigator ul li a{font-size:1.1em; height:40px; width:100px; line-height:40px; text-align:right; padding:10px 30px;}
+	
+	div#navigator #menubar:checked ~ ul{left:65px;}
+
+	div#navigator ul:hover li ul{height:100%;}
+	div#navigator ul li:hover{background:#620000;}
+	div#navigator ul li:hover > a{color:white;}
+	div#navigator ul li:hover > ul{left:160px;}
+	
+	div#navigator ul li ul{position:absolute; width:100%; height:100%; left:700px; top:0; padding-top:10px; overflow:hidden; border:none; transition:all 1s ease;}
+	div#navigator ul li ul li a{font-size:13px; width:140px; padding:0px 20px; margin:10px 0; text-align:left;}
+
+	div#content{width:100%; float:none; margin:0 auto;}
+	div#content .login .images{display:none;}
+	div#content .login h2{padding:50px 10px 20px;}
+	div#content .login h4{width:240px; padding:70px 70px 10px; margin-top:50px;}
+	div#content .login p{padding:0 40px 10px;}
+
+	div#content .loginbox{width:85%; padding:35px 25px 50px; margin:40px auto;}
+	div#content .loginbox .image{display:none;}
+	div#content form .inputBox{margin:5px 20px 0 0px;}
+	div#content .loginbox .findInfo{left:12px; bottom:-10px;}
+	
+	div#footer{margin-top:10px; height:100%; }
+	div#footer .footerTop{width:100%; height:60px; margin-bottom:20px;}
+	ul.guideMenu li, div.siteLink{display:none;}
+	ul.guideMenu li:nth-child(1),ul.guideMenu li:nth-child(2){display:block;}
+	ul.guideMenu li a{font-size:0.9em;}
+	div#footer address{float:none; width:90%; margin:0px; padding:0 30px;}
+	div#footer address span{float:none; display:block;font-size:0.8em; margin:0; padding:5px 10px;text-align:center;}
+	div#footer address span.addr{display:none;}
+	div#footer address span:nth-child(2){float:left; padding:5px 45px 5px 0;}
+	div#footer address span:nth-child(3){float:right; padding:5px 0 5px 45px;}
+	div#footer .logoFooter{width:100%; display:block;}
+	div#footer .logoFooter img{position:absolute; bottom:-30px; left:50%; margin-left:-130px;}
+}
+
+@media screen and (min-width:320px) and (max-width:429px){
+	.wrap{overflow:hidden;}
+	div#header{display:none;}
+
+	div#navigator input{display:none;}
+	div#navigator label{display:block;}
+	div#navigator label img{width:40px; padding:15px; position:fixed;}
+	
+	div#navigator{position:fixed; z-index:9999; width:100%; height:70px; background:url(../images/common/logo.png) no-repeat center; background-color:orange; cursor:pointer;}
+	
+	div#navigator ul{width:100%; height:100%; position:fixed; left:500px; top:0px; background:#fff1d8; z-index:9999; transition:all 1s ease;}
+	div#navigator ul li{float:none;}
+	div#navigator ul li a{font-size:1.1em; height:40px; width:100px; line-height:40px; text-align:right; padding:10px 30px;}
+	
+	div#navigator #menubar:checked ~ ul{left:65px;}
+
+	div#navigator ul:hover li ul{height:100%;}
+	div#navigator ul li:hover{background:#620000;}
+	div#navigator ul li:hover > a{color:white;}
+	div#navigator ul li:hover > ul{left:160px;}
+	
+	div#navigator ul li ul{position:absolute; width:100%; height:100%; left:500px; top:0; padding-top:10px; overflow:hidden; border:none; transition:all 1s ease;}
+	div#navigator ul li ul li a{font-size:13px; width:140px; padding:0px 20px; margin:10px 0; text-align:left;}
+	
+	div#mainVisual{height:700px;}
+	div#content{height:100%; background:#f8f8fc;}
+	div#content{width:100%; float:none; margin:0 auto;}
+	div#content .login{height:100%;}
+	div#content .login .images{display:none;}
+	div#content .login h2,div#content .login h3{display:none;}
+	div#content .login h4{font-size:1.7em; width:230px; border-top:none; margin:0px; padding:70px 70px 20px; font-family:'휴먼모음T', Gothic, serif;}
+	div#content .login p{padding:0 35px 20px;}
+
+	div#content .loginbox{width:85%; padding:0px; margin:30px auto; border:none;}
+	div#content .loginbox .image{display:none;}
+	div#content form .inputBox{margin:5px 3px;}
+	div#content form .inputBox input{margin:5px 3px 5px; padding:2px 5px; width:180px; height:30px; border-radius:5px; border:1px solid #ddd;}
+	div#content .loginbox .findInfo{width:300px; left:-10px; bottom:-15px;}
+	div#content form a{width:65px; height:77px; line-height:77px; text-align:center; font-size:15px; font-weight:bold; display:inline-block; float:left; background:orange; margin:10px 0 0; border-radius:5px;}
+
+
+	div#footer{margin-top:10px; height:100%; }
+	div#footer .footerTop{width:100%; height:50px; margin-bottom:0px;}
+	div#footer div.siteLink{display:none;}
+	div#footer ul.guideMenu{ height:50px; margin-left:-375px;}
+	div#footer ul.guideMenu li{margin:10px 0 0; padding:0;}
+	div#footer ul.guideMenu li a{font-size:0.9em; margin:0; padding:10px;}
+	
+	div#footer address{float:none; width:90%; height:100%; margin:0px; padding:0 20px;}
+	div#footer address span{float:none; display:block; font-size:0.8em; margin:10px; padding:0 12px; text-align:center;}
+	div#footer address span.addr{display:none;}
+	div#footer address span.tel{float:left;padding:0 20px;}
+	div#footer address span.fax{float:left;}
+	div#footer address span.copyright{float:none; display:block;}
+	div#footer .logoFooter{width:100%; display:none;}
+
+}

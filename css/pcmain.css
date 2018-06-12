@@ -1,0 +1,341 @@
+/* 레이어 팝업 */
+.layer{width:100%; height:100%; background:rgba(0,0,0,0.4);position:fixed; z-index:10000;}
+.layerPop{position:absolute; z-index:10000; left:40%; top:15%;}
+.layerPop img{width:100%;}
+.layerPop a{position: absolute;right:38px; bottom:45px;}
+
+/* mainVisual */
+div#mainVisual {overflow:hidden; position:relative;}
+div#mainVisual p{position:relative; z-index:10;}
+div#mainVisual p span{color:rgba(251,231,165,0.8); font-size:5em; line-height:400px; font-weight:500; position:absolute; cursor:pointer;}
+div#mainVisual p span:hover{color:rgba(251,220,140,0.8);}
+.btnPrev{left:0; top:0;}
+.btnNext{right:0; top:0;}
+
+div#mainVisual ul{position:absolute;}
+div#mainVisual li{float:left;width:15px; height:15px; color:#000;}
+
+div#mainVisual .active{z-index:1;}
+div#mainVisual img{position:absolute;width:100%;}
+
+div#mainVisual .mainUpper{width:100%; height:360px;}
+div.search{position:relative; left:18%; top:24%; z-index:10; width:772px; height:203px; background:rgba(251,231,165,0.5);}
+div.search:hover{background:rgba(255,204,90,0.7);}
+div.search h2{font-size:20px; font-weight:bold; padding:30px 60px; color:#333;}
+div.search form{height:60px; padding:0px 60px;}
+div.search form select{float:left; width:140px; height:58px; margin-right:3px; border:none; border-radius:10px;}
+div.search input{float:left; width:395px; height:58px; margin:0 3px 0 3px; padding-left:8px; border:none; border-radius:10px;}
+div.search input.btnSearch{float:left; width:90px; height:58px; margin-left:2px; padding-left:0; vertical-align:middle; cursor:pointer; border:none;}
+
+div#mainVisual .mainLower{width:100%; height:90px; background:rgba(214,204,190,0.5); position:relative; z-index:10;}
+div#mainVisual .mainLower .seats{width:50%; height:90px; float:left;}
+div#mainVisual .mainLower .seats table{width:75%; height:70px; margin:8px 0 0 70px; background:#fff;}
+div#mainVisual .mainLower .seats caption{display:none;}
+div#mainVisual .seats th, td{text-align:center; border-left:1px solid #bbb;}
+div#mainVisual .seats table th{ font-weight:600; padding-top:8px; }
+div#mainVisual .seats table thead th:nth-child(1){width:90px; padding-top:10px; border-left:none;}
+div#mainVisual .seats table tbody th{width:90px; padding-bottom:13px; border-left:none;}
+
+div#mainVisual .seats table td{ padding-bottom:8px;}
+div#mainVisual .seats table td:nth-child(3){color:blue;}
+div#mainVisual .seats table td:nth-child(4){color:red;}
+div#mainVisual .seats table tfoot{display:none;}
+
+div#mainVisual .mainLower .login{width:50%; height:90px; float:left;}
+div#mainVisual .mainLower .login form{margin:0 25px; float:left; overflow:hidden;}
+div#mainVisual .mainLower .login input{width:180px; height:45px; margin:20px 0; padding-left:8px; border:none; border-radius:10px;}
+div#mainVisual .mainLower .login input.btnLogin{width:120px; height:45px; margin:18px 5px; padding-left:0; background:#444; border:none; border-radius:10px; vertical-align:middle; cursor:pointer;}
+
+/* contents01 */
+div#contents .contentBox{background:#D7CCBF; overflow:hidden;}
+div#contents > div{width:50%; height:370px; float:left; margin-top:30px;}
+div#contents label{display:block; float:left; text-align:center; font-weight:600; line-height:70px;}
+div#contents label:nth-child(1){width:25%; height:70px; background:#E2E1CD;}
+div#contents label:nth-child(2){width:25%; height:70px; background:#E2E1CD;}
+div#contents input{display:none;}
+
+div#contents input#notice:checked ~ div.tab01{display:block;}
+div#contents input#notice:checked ~ section label:nth-of-type(1){background:#F8F8FC;}
+div#contents input#event:checked ~ div.tab02{display:block;}
+div#contents input#event:checked ~ section label:nth-of-type(2){background:#f8f8fc;}
+
+div#contents .content01{width:100%; height:300px; background:#F8F8FC; float:left;}
+div#contents .content01 > div{clear:both; width:100%; height:300px;}
+div#contents .content01 div div{display:inline-block; width:60%; height:300px;}
+div#contents .content01 div div h2{text-overflow: ellipsis; overflow: hidden; white-space: nowrap; word-break: break-all; width:70%; font-size:22px; padding:30px 20px 10px;}
+div#contents .content01 div div p{width:70%; height:100px; font-size:18px; padding:20px 20px 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.4em; height: 5.6em;}
+
+div#contents .content01 div img{width:30%; margin:25px;}
+div#contents .content01 div img:hover{cursor:pointer; border:1px solid #ccc; box-sizing:border-box;}
+
+div#contents .content01 div div a.boxtag{background:#f8f8fc;}
+div#contents .content01 div div a:hover{text-decoration:underline;}
+div#contents .content01 div.eventBox div{width:100%;}
+div#contents .content01 div.eventBox h2{width:100%; height:260px; line-height:260px; text-align:center; padding:0;}
+div#contents .content01 .eventBox img{width:20%; margin-top:60px; cursor:pointer; position:relative; left:430px; bottom:80px;}
+.tab01, .tab02{display:none;}
+
+/* contents02 */
+div#contents .content02{width:50%; height:370px; margin:30px 0; float:left; overflow:hidden;}
+div#contents .content02 div{ width:24%; float:left; margin:20px 2.5px; position:relative;}
+div#contents .content02 img{width:100%;}
+div#contents .content02 img.iconOv{opacity:0; position:absolute; left:0px; top:0; transition:all .2s linear;}
+div#contents .content02 a:hover img.iconOv{opacity:1;}
+
+/* contents03 */
+div#contents .content03{width:100%; height:300px; background:url(../images/main/content_book.png); background-position:center; clear:both;}
+div#contents .content03 div.list{height:50px;}
+div#contents .content03 div.list p{float:left; font-size:20px; font-weight:bold; padding:20px 50px; margin-left:20px;}
+div#contents .content03 div.books{clear:both; width:100%; height:250px; margin-left:20px;}
+div#contents .content03 div.books div{width:20%; float:left; margin:0px;}
+div#contents .content03 div.books a:hover{text-decoration:underline;}
+div#contents .content03 p{text-align:center; font-size:15px; }
+div#contents .content03 img{display:block; margin:0 auto; width:130px; height:180px; -moz-box-shadow:3px 3px 15px 0 #333; -webkit-box-shadow:3px 3px 15px 0 #333; box-shadow:3px 3px 15px 0 #333;}
+div#contents .content03 img:hover{border:1px solid #bbb; box-sizing:border-box;}
+
+
+
+@media screen and (max-width:1200px){
+    .layerPop{position:absolute; z-index:10000; left:30%; top:15%;}
+    
+    div#mainUpper{}
+    div.search{left:9%;width:80%;}
+	div.search form{height:60px; padding:0px 60px;}
+	div.search select{width:25%; margin:1px;}
+	div.search input{width:55%; margin:1px;}
+
+	div#banner img{min-width:150%; left:-25%;}
+
+	div#mainVisual .mainLower{width:100%; height:180px; background:rgba(214,204,190,0.5); overflow:hidden;}
+	div#mainVisual .mainLower .login{float:none; width:508px; margin:0 auto;}
+	div#mainVisual .mainLower .seats{float:none; width:476px; height:80px; margin:20px auto 0; transition:all .4s ease;}
+	div#mainVisual .mainLower .seats table{float:none; width:476px; margin:0 auto;}	
+	div#mainVisual .mainLower .login form{width:560px; height:90px; float:none; margin:0 auto;}
+
+	div#contents .content01 div img{width:30%; margin:30px 20px;}
+	div#contents .content01 .eventBox img{left:70%;}
+	div#contents .content02{width:50%; height:370px; margin:30px 0; float:left; overflow:hidden;}
+	div#contents .content02 div{width:23.5%; float:left; margin:45px 2.5px 0; position:relative;}
+	div#contents .content03 div.list p{padding:20px 30px; margin-left:10px;}
+	div#contents .content03 div.books{margin-left:10px;}
+	div#contents .content03 div.books div{float:left; margin:0px; width:20%;}
+	
+	div#footer{height:300px;}
+	div#footer .footerTop{height:120px; border-bottom:none;}
+	div#footer .guideMenu{height:55px; border-bottom:1px solid #856;}
+	div#footer .siteLink{float:right; width:250px; margin:30px 0 0;}
+	div#footer .logoFooter{position:absolute; left:5%; top:53%; margin:0; padding:0;}
+	div#footer address{display:inline-block; width:70%; float:right; margin-top:20px;}
+	div#footer address span{float:left; padding:20px;}
+
+}
+
+@media screen and (min-width:834px) and (max-width:969px){
+	div#header > a img{display:block; width:6%; float:right; margin:10px 10px 0;}
+	div#header div.left{width:470px; height:60px; float:left;}
+	div#header div.right{display:none;}
+
+	div#banner img{min-width:180%; left:-25%;}
+	
+	div#contents .content01 div img{width:30%; margin:50px 10px;}
+	div#contents .content01 div div img{margin:20px 15px;}
+	div#contents .content01 div div h2{font-size:1.2em; margin-top:20px;}
+	div#contents .content01 div div p{font-size:1em;}
+	div#contents .content02 div{width:30%; float:left; margin:30px 3px; position:relative;transition:all .4s ease;}
+	div#contents .content03 div.books{margin:0;}
+
+	div#footer ul.guideMenu li{padding:10px;}
+	div#footer address span{float:left; padding:20px 0 0 25px;}
+}
+
+@media screen and (min-width:580px) and (max-width:833px){
+	div#header > a img{display:block; width:6%; float:right; margin:10px 10px 0;}
+	div#header div.right{display:none;}
+	
+	div#banner img{min-width:230%; left:-25%;}
+	div.mainUpper .search{width:100%; height:100px; position:relative; top:0; left:0;transition:all .4s ease;}
+	div.mainUpper .search h2{display:none;}
+	div.search form{height:60px; margin-left:10px; padding:16px 20px;transition:all .4s ease;}
+	div.search form select{width:25%; margin:1px;}
+	div.search input{width:52%; margin-left:5px;}
+	div.search input.btnSearch{width:90px;}
+	
+	div#navigator ul li a{font-size:1.2em;}
+	div#navigator ul li ul li a{font-size:14px;}
+	
+	div#contents > div{width:90%; height:370px; float:none; margin:30px auto 0; transition:all .4s ease;}
+	div#contents .content01 div div h2{width:80%;}
+	div#contents .content01 div div p{width:80%;}
+	div#contents .content01 div img{width:27%; margin:20px;}
+	div#contents .content01 .eventBox img{left:70%;}
+
+	div#contents .content02{width:100%; height:100%;transition:all .4s ease;}
+	div#contents .content02 div{width:24%; float:left; margin:20px 2.5px; position:relative;}
+
+	div#contents .content03{width:100%;} 
+	div#contents .content03 div.list p{padding:15px 20px; margin-left:10px;}
+	div#contents .content03 div.books{margin-left:10px;}
+	div#contents .content03 div.books div{width:33.33%; float:left; margin:0px; transition:all .4s ease;}
+	div#contents .content03 div.books div:nth-child(4),div#contents .content03 div.books div:nth-child(5){display:none;}
+	div#contents .content03 div.books div img{display:block; margin:0 auto;}
+	
+	div#footer .footerTop{height:60px; border-top:none;}
+	ul.guideMenu li, div.siteLink{display:none;}
+	ul.guideMenu li:nth-child(1),ul.guideMenu li:nth-child(2){display:block;}
+	ul.guideMenu li a{font-size:0.9em;}
+	div#footer address{clear:both; position:absolute; left:15%; width:550px;}
+	div#footer address span{display:block;font-size:0.8em; margin:0; padding:5px 10px;text-align:center;}
+
+	div#footer .logoFooter{width:100%; display:block;}
+	div#footer .logoFooter img{position:absolute; top:0; left:11%;}
+}
+
+@media screen and (min-width:430px) and (max-width:579px){
+    .layerPop{position:absolute; z-index:10000; left:20%; top:15%;}
+	.wrap{overflow:hidden;}
+	div#header{display:none;}
+
+	div#navigator input{display:none;}
+	div#navigator label{display:block;}
+	div#navigator label img{width:40px; padding:15px; position:fixed;}
+	
+	div#navigator{position:fixed; z-index:9999; width:100%; height:70px; background:url(../images/common/logo.png) no-repeat center; background-color:orange;}
+	
+	div#navigator ul{width:100%; height:100%; position:fixed; left:700px; top:0px; background:#fff1d8; z-index:9999; transition:all 1s ease;}
+	div#navigator ul li{float:none;}
+	div#navigator ul li a{font-size:1.1em; height:40px; width:100px; line-height:40px; text-align:right; padding:10px 30px;}
+	
+	div#navigator #menubar:checked ~ ul{left:65px;}
+
+	div#navigator ul:hover li ul{height:100%;}
+	div#navigator ul li:hover{background:#620000;}
+	div#navigator ul li:hover > a{color:white;}
+	div#navigator ul li:hover > ul{left:160px;}
+	
+	div#navigator ul li ul{position:absolute; width:100%; height:100%; left:700px; top:0; padding-top:10px; overflow:hidden; border:none; transition:all 1s ease;}
+	div#navigator ul li ul li a{font-size:13px; width:140px; padding:0px 20px; margin:10px 0; text-align:left;}
+    
+	div#mainVisual{background:none;}
+	div#mainVisual p{display:none;}
+	div#mainVisual #banner{display:none;}
+    div#mainVisual .mainUpper{height:160px;}
+	div#mainVisual .mainLower{display:none;}
+	
+    
+	div.mainUpper .search{width:100%; height:83px; position:fixed; top:70px; left:0; transition:all .4s ease;}
+	div.mainUpper .search h2{display:none;}
+	div.search form{width:100%; height:60px; margin-left:20px; padding:16px 10px;transition:all .4s ease;}
+	div.search form select{width:22%; height:46px; margin-left:3px;}
+	div.search input{width:48%; height:46px; margin:1px;}
+	div.search input.btnSearch{width:70px; height:46px;}
+    div#contents > div{width:90%; float:none; margin:30px auto 0; transition:all .4s ease;}
+	div#contents div.contentBox{height:300px;}
+	
+	div#contents div.contentBox section label{height:55px; line-height:55px; font-size:0.9em;}
+	div#contents .content01 div div h2{width:80%; font-size:1.0em; padding-left:5px; margin:0;}
+	div#contents .content01 div div p{width:80%; font-size:0.8em; padding-left:5px; margin:0;}
+	div#contents .content01 div img{width:30%; margin:20px 5px 0 15px;}
+	div#contents .content01 div img:first-child{margin-top:40px;}
+	div#contents .content01 div.eventBox h2{line-height:240px;}
+	div#contents .content01 .eventBox img{left:68%; margin:20px;}
+
+	div#contents .content02{width:100%; height:140px; padding-left:10px;transition:all .4s ease;}
+	div#contents .content02 div{margin:10px 0 20px;}
+
+	div#contents .content03{overflow:hidden;}
+	div#contents .content03 div.list p{padding:15px 10px; margin-left:10px;}
+	div#contents .content03 div.books{width:250%; margin:0;}/* 배너로 움직이기 */
+	div#contents .content03 div.books div{float:left; margin:0px; }
+
+	div#footer{margin-top:10px; height:100%; }
+	div#footer .footerTop{width:100%; height:60px; margin-bottom:20px;}
+	ul.guideMenu li, div.siteLink{display:none;}
+	ul.guideMenu li:nth-child(1),ul.guideMenu li:nth-child(2){display:block;}
+	ul.guideMenu li a{font-size:0.9em;}
+	div#footer address{float:none; width:90%; margin:0px; padding:0 30px;}
+	div#footer address span{float:none; display:block;font-size:0.8em; margin:0; padding:5px 10px;text-align:center;}
+	div#footer address span.addr{display:none;}
+	div#footer address span:nth-child(2){float:left; padding:5px 45px 5px 0;}
+	div#footer address span:nth-child(3){float:right; padding:5px 0 5px 45px;}
+	div#footer .logoFooter{width:100%; display:block;}
+	div#footer .logoFooter img{position:absolute; bottom:-30px; left:50%; margin-left:-130px;}
+}
+
+@media screen and (min-width:320px) and (max-width:429px){
+    .layerPop{position:absolute; z-index:10000; left:5%; top:15%;}
+    .layerPop img{width:100%;}
+    
+	.wrap{overflow:hidden;}
+	div#header{display:none;}
+
+	div#navigator input{display:none;}
+	div#navigator label{display:block;}
+	div#navigator label img{width:40px; padding:15px; position:fixed;}
+	
+	div#navigator{position:fixed; z-index:9999; width:100%; height:70px; background:url(../images/common/logo.png) no-repeat center; background-color:orange;}
+	
+	div#navigator ul{width:100%; height:100%; position:fixed; left:500px; top:0px; background:#fff1d8; z-index:9999; transition:all 1s ease;}
+	div#navigator ul li{float:none;}
+	div#navigator ul li a{font-size:1.1em; height:40px; width:100px; line-height:40px; text-align:right; padding:10px 30px;}
+	
+	div#navigator #menubar:checked ~ ul{left:65px;}
+
+	div#navigator ul:hover li ul{height:100%;}
+	div#navigator ul li:hover{background:#620000;}
+	div#navigator ul li:hover > a{color:white;}
+	div#navigator ul li:hover > ul{left:160px;}
+	
+	div#navigator ul li ul{position:absolute; width:100%; height:100%; left:500px; top:0; padding-top:10px; overflow:hidden; border:none; transition:all 1s ease;}
+	div#navigator ul li ul li a{font-size:13px; width:140px; padding:0px 20px; margin:10px 0; text-align:left;}
+
+	div#mainVisual{background:none;}
+	div#mainVisual p{display:none;}
+	div#mainVisual #banner{opacity:0;}
+    div#mainVisual .mainUpper{}
+	div#mainVisual .mainLower{display:none;}
+	div.mainUpper .search{width:100%; height:83px; position:fixed; top:70px; left:0; transition:all .4s ease;}
+	div.mainUpper .search h2{display:none;}
+	div.search form{width:100%; height:60px; margin-left:20px; padding:16px 10px;transition:all .4s ease;}
+	div.search form select{width:22%; height:46px; margin-left:3px;}
+	div.search input{width:40%; height:46px; margin:1px;}
+	div.search input.btnSearch{width:70px; height:46px;}
+	
+
+	div#contents > div{width:90%; float:none; margin:30px auto 0; transition:all .4s ease;}
+	div#contents div.contentBox{height:300px; margin-top:20px;}
+	div#contents div.contentBox section label{height:55px; line-height:55px; font-size:0.9em;}
+	
+	div#contents .content01 {height:250px;}
+	div#contents .content01 div img{width:35%; margin:16px auto; display:block;}
+	div#contents .content01 div div p,div#contents .content01 div div img{display:none;}
+	div#contents .content01 div div h2{width:120%; margin:0 50px; padding:0; font-size:1em;}
+	
+	div#contents .content01 div.eventBox h2{margin:0; padding:0; line-height:240px; cursor:pointer;}
+	div#contents .content01 .eventBox img{display:none;}
+
+	div#contents .content02{width:250%; height:111px; padding-left:14px; transition:all .4s ease;}
+	div#contents .content02 div{margin:0px 8px 8px; width:11%;}
+
+	div#contents .content03{overflow:hidden; height:280px;}
+	div#contents .content03 div.list p{padding:15px 10px; margin-left:20px; font-size:1em;}
+	div#contents .content03 div.books{width:500%; margin:0;}
+	div#contents .content03 div.books div{float:left; margin:10px 0px;}
+	div#contents .content03 div.books div p{margin-top:8px; }
+
+	div#footer{margin-top:10px; height:100%; }
+	div#footer .footerTop{width:100%; height:50px; margin-bottom:0px;}
+	div#footer div.siteLink{display:none;}
+	div#footer ul.guideMenu{ height:50px; margin-left:-375px;}
+	div#footer ul.guideMenu li{margin:10px 0 0; padding:0;}
+	div#footer ul.guideMenu li a{font-size:0.9em; margin:0; padding:10px;}
+	
+	div#footer address{float:none; width:90%; margin:0px; padding:0 30px;}
+	div#footer address span{float:none; display:block; font-size:0.8em; margin:10px; padding:0 12px; text-align:center;}
+	div#footer address span.addr{display:none;}
+	div#footer address span.tel{float:left;}
+	div#footer address span.fax{float:left;}
+	div#footer address span.copyright{float:none; padding:0; margin:10px 0;}
+	div#footer .logoFooter{width:100%; display:block;}
+	div#footer .logoFooter img{position:absolute; bottom:-40px; left:50%; margin-left:-110px;}
+
+}

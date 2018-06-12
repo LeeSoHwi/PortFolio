@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<title> 성북정보도서관 </title>
+	<link rel="shortcut icon" href="images/favicon.ico"/>
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/pcmain.css"/>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<script type="text/javascript" src="js/pcmain.js"></script>
+</head> 
+<body>
+    <div class="layer">
+        <div class="layerPop">
+          <img src="images/main/layerpopup.png" alt="팝업공지"/>
+          <a href="#" onclick="this.parentNode.parentNode.style.display = 'none'">[닫기]</a>        
+        </div>   
+    </div>
+	<div class="wrap">
+        <div class="skipNavi">
+            <a href="#logIn">로그인 바로가기</a>
+            <a href="#searchOpt">검색창 바로가기</a>
+            <a href="#contents">본문 바로가기</a>
+        </div>	
+		<!-- Header -->
+		<div id="header">
+			<h1>해더부분</h1>
+			<div class="left">
+				<a href="#" title="시작페이지로"><img class="logo" src="images/common/logo.png" alt="로고"/></a>
+				<a href="https://www.sblib.seoul.kr/library/index.do" target="_blank" title="통합도서관"><img class="shortCut" src="images/common/btn_link.png" alt="통합도서관바로가기"></a>
+			</div>
+			<div class="right">
+				<ul class="lnb">
+					<li><a href="#" title="home">홈</a></li>
+					<li><a href="loginpage.html" title="login">로그인</a></li>
+					<li><a href="join.html" title="register">회원가입</a></li>
+					<li><a href="#" title="sitemap">사이트맵</a></li>
+				</ul>
+				<a href="#" title="blog"><img class="blog" src="images/common/blog.png" alt="블로그" /></a>
+				<a href="http://www.facebook.com" title="facebook" target="_blank" ><img class="facebook" src="images/common/facebook.png" alt="페이스북" /></a>
+				<a href="#" title="share"><img class="share" src="images/common/share.png" alt="공유하기" /></a>
+			</div>
+			
+		</div>
+		<!-- //Header -->
+
+		<!-- Navigator -->
+		<div id="navigator">
+			<input type="checkbox" id="menubar"/>
+			<section>
+				<label for="menubar"><img src="images/common/menubar.png" alt="메뉴바" /></label>
+			</section>
+			<ul>
+				<li><!-- 도서관소개 -->
+					<a href="#" title="도서관 소개">도서관 소개</a>
+					<ul>
+						<li><a href="#" title="인사말">인사말</a></li>
+						<li><a href="#" title="연혁">연혁</a></li>
+						<li><a href="#" title="조직현황">조직현황</a></li>
+						<li><a href="#" title="시설현황">시설현황</a></li>
+						<li><a href="#" title="자료현황">자료현황</a></li>
+						<li><a href="#" title="오시는길">오시는 길</a></li>
+					</ul>
+				</li>
+				<li><!-- 도서관이용 -->
+					<a href="pcsub.html" title="도서관 이용">도서관 이용</a>
+					<ul>
+						<li><a href="#" title="이용안내">이용안내</a></li>
+						<li><a href="#" title="휴관일, 행사">휴관일/행사</a></li>
+						<li><a href="join.html" title="회원가입">회원가입</a></li>
+						<li><a href="#" title="자료이용">자료이용</a></li>
+						<li><a href="#" title="자료실이용">자료실이용</a></li>
+						<li><a href="#" title="열람실, 부대시설">열람실/부대시설</a></li>
+						<li><a href="#" title="시설대관">시설대관</a></li>
+						<li><a class="blink" href="pcsub.html" title="자료제공서비스">자료제공서비스</a></li>
+						<li><a href="#" title="모바일서비스">모바일서비스</a></li>
+					</ul>
+				</li>
+				<li><!-- 자료검색 -->
+					<a href="#" title="자료검색">자료검색</a>
+					<ul>
+						<li><a href="#" title="간략검색">간략검색</a></li>
+						<li><a href="#" title="상세검색">상세검색</a></li>
+						<li><a href="#" title="주제로검색">주제로검색</a></li>
+						<li><a href="#" title="신작자료검색">신작자료검색</a></li>
+						<li><a href="#" title="희망도서신청">희망도서신청</a></li>
+						<li><a href="#" title="신문, 잡지">신문/잡지</a></li>
+						<li><a href="#" title="DVD">DVD</a></li>
+						<li><a href="#" title="학술인문정보">학술인문정보</a></li>
+						<li><a href="#" title="전자도서관">전자도서관</a></li>
+					</ul>
+				</li>
+				<li><!-- 정보마당 -->
+					<a href="#" title="정보마당">정보마당</a>
+					<ul>
+						<li><a href="#" title="공지사항">공지사항</a></li>
+						<li><a href="#" title="행사안내">행사안내</a></li>
+						<li><a href="#" title="문화프로그램 신청">문화프로그램 신청</a></li>
+						<li><a href="#" title="함께 읽으면 좋을 책">함께 읽으면 좋을 책</a></li>
+						<li><a href="#" title="독서정보">독서정보</a></li>
+						<li><a href="#" title="특성화 서비스">특성화 서비스</a></li>
+						<li><a href="#" title="독서동아리">독서동아리</a></li>
+					</ul>
+				</li>
+				<li><!-- 참여마당 -->
+					<a href="#" title="참여마당">참여마당</a>
+					<ul>
+						<li><a href="#" title="자원봉사신청">자원봉사신청</a></li>
+						<li><a href="#" title="견학신청">견학신청</a></li>
+						<li><a href="#" title="자주 묻는 질문">자주 묻는 질문</a></li>
+						<li><a href="#" title="묻고 답하기">묻고 답하기</a></li>
+						<li><a href="#" title="도서관에 바란다">도서관에 바란다</a></li>
+						<li><a href="#" title="설문조사">설문조사</a></li>
+						<li><a href="#" title="분실물 게시판">분실물 게시판</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- //Navigator -->
+
+		<!-- MainVisual -->
+		<div id="mainVisual">
+			<h1>메인 비주얼 겸 검색창</h1>
+			<p>
+				<span class="btnPrev">&lt;</span>
+				<span class="btnNext">&gt;</span>
+			</p>
+			<ul>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			</ul>
+			<div id="banner">
+				<img class="active" src="images/main/banner1.png" alt="배너 이미지1"/>
+				<img src="images/main/banner2.png" alt="배너 이미지2"/>
+				<img src="images/main/banner3.png" alt="배너 이미지3"/>
+				<img src="images/main/banner4.png" alt="배너 이미지4"/>
+				<img src="images/main/banner5.png" alt="배너 이미지5"/>
+			</div>
+			<div>
+				<div class="mainUpper">
+					<div class="search">
+						<h2>늘 새로운 상상, 더 나은 삶을 상상하는 곳!</h2>
+						<form method="post">
+							<fieldset>
+								<div>
+									<label>검색옵션</label>
+									<select title="검색옵션" id="searchOpt">
+										<option value="전체검색">전체검색</option>
+										<option value="도서명">도서명</option>
+										<option value="저자">저자</option>
+										<option value="내용">내용</option>
+										<option value="출판사">출판사</option>
+										<option value="ISBN">ISBN</option>
+									</select>
+								</div>
+								<div>
+									<label>검색창</label>
+									<input type="text" title="도서검색" placeholder="검색어를 입력하세요"/>
+									<input class="btnSearch" type="image" src="images/main/btn_search.png" alt="btnSearch"/>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="mainLower">
+					<div class="seats">
+						<table>
+							<caption>좌석현황</caption>
+							  <thead>
+								<tr>
+								  <th scope="col">열람실</th>
+								  <th scope="col">전체</th>
+								  <th scope="col">사용</th>
+								  <th scope="col">잔여</th>
+								  <th scope="col">대기</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <th scope="col">이용현황</th>
+								  <td>99</td>
+								  <td>99</td>
+								  <td>99</td>
+								  <td>99</td>
+								</tr>
+							  </tbody>
+							  <tfoot></tfoot>					
+						</table>
+					</div>
+					<div class="login" id="logIn">
+						<form method="post" action="./php/login.php">
+							<fieldset>
+								<label>로그인</label>
+								<input type="text" title="아이디입력" placeholder="아이디"/>
+								<input type="password" title="비밀번호입력" placeholder="비밀번호"/>
+								<input type="image" class="btnLogin" src="images/main/btn_login.png" alt="로그인 버튼"/>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //MainVisual -->
+
+		<!-- Contents -->
+		<div id="contents">
+			<h1>공지사항,행사안내</h1>
+			<div class="contentBox">
+				<input id="notice" type="radio" name="tab" checked="checked"/>
+				<input id="event" type="radio" name="tab"/>
+				<section>
+					<label for="notice">공지사항</label>
+					<label for="event">행사안내</label>
+				</section>
+				<!-- content01 공지사항 -->
+				<div class="content01 tab01">
+					<div>
+						<img src="images/main/noticeimg.png" alt="고전읽기"/>
+						<div>
+							<h2><a class="boxtag" href="#" title="더보기">겨울 인문특강 - 고전은 힘이 세다</a></h2>
+							<p><a class="boxtag" href="#" title="더보기">오늘날 알파고가 보여준 인공지능의 놀라운 능력은 인간의 본질에 대한 근원적 의문을 던진다. 이 작품을 통해 인간과 그 외 타자들 사이의 경계 설정에 대한 철학적 질문을 살펴보고 각자의 해답을 생각해 본다.</a></p>
+							<img src="images/main/tab_detail.png" alt="자세히보기"/>
+						</div>
+					</div>
+				</div>
+				<!-- //content01 공지사항 -->
+				<!-- content01 행사안내 -->
+				<div class="content01 tab02">
+					<div class="eventBox">
+						<div>
+							<h2>등록된 행사 안내가 없습니다.</h2>
+							<img src="images/main/tab_detail.png" alt="자세히보기"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //content01 행사안내 -->
+
+			<!-- content02 -->
+			<div class="content02">
+				<h1>바로가기 메뉴들</h1>
+				<div><a href="javascript:void(0);" title="이용안내"><img src="images/main/icons_01.png" alt="이용안내" /><img class="iconOv" src="images/main/icons_ov_01.png" alt="이용안내" /></a></div>
+				<div><a href="join.html" title="회원가입"><img src="images/main/icons_02.png" alt="회원가입" /><img class="iconOv" src="images/main/icons_ov_02.png" alt="회원가입" /></a></div>
+				<div><a href="javascript:void(0);" title="책드림서비스"><img src="images/main/icons_03.png" alt="책드림서비스" /><img class="iconOv" src="images/main/icons_ov_03.png" alt="책드림서비스" /></a></div>
+				<div><a href="javascript:void(0);" title="독서동아리 안내"><img src="images/main/icons_04.png" alt="독서동아리 안내" /><img class="iconOv" src="images/main/icons_ov_04.png" alt="독서동아리 안내" /></a></div>
+				<div><a href="javascript:void(0);" title="문화프로그램 신청"><img src="images/main/icons_05.png" alt="문화프로그램 신청" /><img class="iconOv" src="images/main/icons_ov_05.png" alt="문화프로그램 신청" /></a></div>
+				<div><a href="javascript:void(0);" title="자원봉사 신청"><img src="images/main/icons_06.png" alt="자원봉사 신청" /><img class="iconOv" src="images/main/icons_ov_06.png" alt="자원봉사 신청" /></a></div>
+				<div><a href="javascript:void(0);" title="후원안내"><img src="images/main/icons_07.png" alt="후원안내" /><img class="iconOv" src="images/main/icons_ov_07.png" alt="후원안내" /></a></div>
+				<div><a href="javascript:void(0);" title="SNS서비스"><img src="images/main/icons_08.png" alt="SNS서비스" /><img class="iconOv" src="images/main/icons_ov_08.png" alt="SNS서비스" /></a></div>
+			</div>
+			<!-- //content02 -->
+			<!-- content03 -->
+			<div class="content03">
+				<h1>추천도서, 신간도서, 인기도서</h1>
+				<div class="list">
+					<p><a href="javascript:void(0);" title="추천도서">추천도서</a></p>
+					<p><a href="javascript:void(0);" title="신간도서">신간도서</a></p>
+					<p><a href="javascript:void(0);" title="인기도서">인기도서</a></p>
+				</div>
+				<div class="books">
+					<div><a href="javascript:void(0);" ><img src="images/main/book01.jpg" alt="성공시대"/><p>성공시대</p></a></div>
+					<div><a href="javascript:void(0);"><img src="images/main/book02.jpg" alt="소비의 역사"/><p>소비의 역사</p></a></div>
+					<div><a href="javascript:void(0);"><img src="images/main/book03.jpg" alt="언더그라운드 레일로드"/><p>언더그라운드 레일로드</p></a></div>
+					<div><a href="javascript:void(0);"><img src="images/main/book04.jpg" alt="4차 산업혁명을 이끌 IT과학이야기"/><p>4차 산업혁명을 이끌<br/>IT과학이야기</p></a></div>
+					<div><a href="javascript:void(0);"><img src="images/main/book05.jpg" alt="비밀의 도서관"/><p>비밀의 도서관</p></a></div>
+				</div>
+			</div>
+			<!-- //content03 -->
+		</div>
+		<!-- //Contents -->
+
+		<!-- footer -->
+		<div id="footer">
+			<h1>풋터부분</h1>
+			<div class="footerTop">
+				<ul class="guideMenu">
+					<li><a href="javascript:void(0);" title="개인정보처리방침">개인정보처리방침</a></li>
+					<li><a href="javascript:void(0);" title="회원약관">회원약관</a></li>
+					<li><a href="javascript:void(0);" title="이메일">이메일</a></li>
+					<li><a href="javascript:void(0);" title="무단수집거부">무단수집거부</a></li>
+					<li><a href="javascript:void(0);" title="고객서비스헌장">고객서비스헌장</a></li>
+					<li><a href="javascript:void(0);" title="사이트맵">사이트맵</a></li>
+					<li><a href="javascript:void(0);" title="찾아오시는 길">찾아오시는 길</a></li>
+				</ul>
+				<div class="siteLink">
+					<form name="link">
+						<fieldset>
+							<div>
+								<label>관련기관 바로가기</label>
+								<select title="관련기관 바로가기">
+									<option value="관련기관 바로가기">관련기관 바로가기</option>
+									<option value="https://www.sbculture.or.kr">성북문화재단</option>
+									<option value="http://cine.arirang.go.kr">아리랑시네센터</option>
+									<option value="http://sma.sbculture.or.kr">성북구립미술관</option>
+									<option value="http://www.sbcareer.or.kr">미래창창성북청소년진로센터</option>
+									<option value="https://www.sblib.seoul.kr">성북구립도서관</option>
+									<option value="index.html">성북정보도서관</option>
+									<option value="https://www.sblib.seoul.kr/arlib/index.do">아리랑정보도서관</option>
+									<option value="https://www.sblib.seoul.kr/snlib/index.do">종암동새날도서관</option>
+								</select>
+							</div>
+						</fieldset>
+						<a href="javascript:void(0);" title="btnGo">GO</a>
+					</form>
+				</div>
+			</div>
+			<div class="logoFooter"><img src="images/common/logo_footer.png" alt="풋터로고"></div>
+			<address>
+				<span class="addr">서울 성북구 화랑로18자길 13 (상월곡동 24-348)</span>
+				<span class="tel">TEL: 02-962-1081</span>
+				<span class="fax">FAX: 02-962-5335</span>
+				<span class="copyright">Copyright &copy; Seongbuk Digital Library. All Rights Reserved.</span>
+			</address>
+		</div>
+		<!-- //footer -->
+
+	</div>	
+</body>
+</html>

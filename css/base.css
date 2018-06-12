@@ -1,0 +1,63 @@
+body{background:#fff9f2; }
+div.wrap{margin:0 auto; max-width:1200px; height:100%; position:relative;}
+label{display:none;}
+h1{display:none;}
+
+.skipNavi{position:relative;}
+.skipNavi a{position:absolute; left:50%; top:0; margin-left:-160px; padding:10px 100px; font-size:1em; font-weight:700; background:#fff; border:2px solid #152f4e; border-radius: 5px;}
+.skipNavi a:focus{z-index:99;}
+
+/* header */
+div#header{position:relative; width:100%; height:70px; background:#fff9f2;}
+div#header div.left{width:470px; height:60px; float:left;}
+div#header div.left img.logo{margin-top:15px; margin-left:10px; float:left;}
+div#header div.left img.shortCut{width:200px; margin:18px 0 18px 20px; float:left;}
+div#header div.right{width:440px; height:70px; background:#fff9f2; position:absolute; right:0;}
+div#header ul.lnb li{text-align:center; margin-right:0px; float:left;}
+div#header ul.lnb li a{padding:0 8px; line-height:70px; border-right:1px solid #bbb;}
+div#header ul.lnb li:last-child a{border-right:none;}
+div#header ul.lnb li a:hover{text-decoration:underline;}
+div#header img.blog,img.facebook,img.share{width:11%; margin:10px 5px; float:left;}
+div#header > a img{display:none;}
+
+/* navigator */
+div#navigator{width:100%; height:90px; background:orange; font-family:'휴먼모음T', Gothic, serif;}
+div#navigator input{display:none;}
+div#navigator ul { position:relative;}
+div#navigator ul li{float:left; width:20%;}
+div#navigator ul li a{display:block; font-size:1.5em; text-align:center; line-height:90px;}
+
+div#navigator ul li ul{width:20%; background:#fff1d8; position: absolute; z-index:99; height:0px; opacity:0; border-left:1px solid #ddd; box-sizing:border-box;}
+div#navigator ul li:nth-of-type(1) ul{border-left:none;}
+div#navigator ul li ul li{height:0; opacity:0; float:none; width:100%;}
+div#navigator ul li ul li a{display: block; font-size:17px; font-weight:100; line-height:30px; padding:6px;}
+
+div#navigator ul li:hover > a{color:#fff; background:#620000;}
+div#navigator ul li ul{transition:all .2s ease;}
+div#navigator ul:hover li ul{opacity:1; height:375px;}
+div#navigator ul:hover li li{display:block; opacity:1; height:42px;}
+
+div#navigator ul li ul:hover{background:#620000;}
+div#navigator ul li ul:hover a{color:#ddd;}
+div#navigator ul li ul li:hover a{color:#fff; text-shadow:0 0 2px #ddd;}
+
+div#navigator ul ul:hover a.blink{color:#000; background:#f4f4f4;}
+div#navigator ul li ul li:hover a.blink{color:#fff; background:#620000;}
+
+/* footer */
+div#footer::before{content:""; display:block; clear:both;}
+div#footer{clear:both; position:relative; width:100%; height:200px; margin-top:40px; background:#fff9f2;}
+div#footer .footerTop{height:55px; border-bottom:1px solid #856;}
+div#footer ul.guideMenu{ margin-left:10px;}
+div#footer ul.guideMenu li{font-size:16px; float:left; padding:10px 20px; margin-top:5px;}
+div#footer ul.guideMenu li a:hover{text-decoration:underline;}
+
+div#footer .siteLink{float:right; width:250px; margin:18px 30px 0 0;}
+div#footer .siteLink form fieldset{width:180px; height:25px; float:left;margin-top:-3px;}
+div#footer .siteLink form fieldset select{width:180px; height:30px; border:1px solid transparent; border-radius:10px;}
+div#footer .siteLink a{float:left; width:25px; height:25px; background:#620000; color:#fff; padding:3px 7px; margin-left:3px; margin-top:-5px; border-radius:10px;}
+
+div#footer .logoFooter{position:absolute; left:85px; bottom:60px;}
+div#footer address{width:800px; height:150px; margin-top:10px; float:right;}
+div#footer address span{float:left; padding:20px 30px; font-size:14px;}
+
